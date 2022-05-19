@@ -27,16 +27,20 @@
     <script>
         $(document).ready(function () {
             $("#btn-pergunta-1").click(function () {
-                $("#resposta-1").slideToggle();
+                $("#resposta-1").show(400);
+                $("#resposta-1").slideDown();
             });
             $("#btn-pergunta-2").click(function () {
-                $("#resposta-2").slideToggle();
+                $("#resposta-2").show(400);
+                $("#resposta-2").slideDown();
             });
             $("#btn-pergunta-3").click(function () {
-                $("#resposta-3").slideToggle();
+                $("#resposta-3").show(500);
+                $("#resposta-3").slideDown(2000);
             });
             $("#btn-pergunta-4").click(function () {
-                $("#resposta-4").slideToggle();
+                $("#resposta-4").show(500);
+                $("#resposta-4").slideDown(2000);
             });
             $("#btn-pergunta-5").click(function () {
                 $("#resposta-5").slideToggle();
@@ -54,6 +58,13 @@
 
         .card-altura {
             min-height: 90px;
+        }
+
+        .div-pergunta {
+            min-height: 50px;
+            border-radius: 7px;
+            text-align: center;
+            font-size: larger;
         }
     </style>
 
@@ -74,17 +85,6 @@
                 <!-- inicio -->
                 <div class="col-sm-12 col-md-6 col-pergunta">
 
-                    <!--
-                    <a class="btn btn-info w-100" id="btn-pergunta-1">
-                        Em média, quanto tempo um gato passa dormindo diariamente?
-                    </a>
-                    <div class="bg-light" id="resposta-1" style="display: none;">
-                        <p align="center">
-                            Em média um gato passa 2/3 do dia a dormir.
-                            Isso significa que em 9 anos de vida, apenas está acordado 3 anos.
-                        </p>
-                    </div>
-                    -->
                     <div class="card">
                         <div class="card-body card-altura">
                             Em média, quanto tempo um gato passa dormindo diariamente?
@@ -116,9 +116,6 @@
                 </div>
 
                 <div class="col-sm-12 col-md-6 col-pergunta">
-                    <a class="btn btn-success btn-lg w-100" id="btn-pergunta-3">
-                        Quem ouve melhor: o gato ou o cão?
-                    </a>
                     <div class="bg-light" id="resposta-3" style="display: none;">
                         <p align="center">
                             A audição de um gato é melhor do que a de um cão.
@@ -126,13 +123,13 @@
                             frequência, cerca de 2 oitavas acima de qualquer humano.
                         </p>
                     </div>
+                    <div class="text-light bg-success w-100 div-pergunta" id="btn-pergunta-3">
+                        Quem ouve melhor: o gato ou o cão?
+                    </div>
                 </div>
 
                 <div class="col-sm-12 col-md-6 col-pergunta">
 
-                    <a class="btn btn-success btn-lg  w-100" id="btn-pergunta-4">
-                        De acordo com a lenda hebráica, como nasceu o gato?
-                    </a>
                     <div class="bg-light" id="resposta-4" style="display: none;">
                         <p align="center">
                             De acordo com uma lenda hebraica, Noé rezou a Deus para o ajudar a
@@ -140,13 +137,16 @@
                             Deus fez um Leão espirrar, e desse espirro nasceu o gato.
                         </p>
                     </div>
+                    <div class="text-light bg-success w-100 div-pergunta" id="btn-pergunta-4">
+                        De acordo com a lenda hebráica, como nasceu o gato?
+                    </div>
                 </div>
 
                 <div class="col-sm-12 col-md-6 col-pergunta">
-
-                    <a class="btn btn-success  btn-lg w-100" id="btn-pergunta-5">
+                    
+                    <div class="text-light bg-success w-100 div-pergunta" id="btn-pergunta-5">
                         Porquê o gato ronrona?
-                    </a>
+                    </div>
                     <div class="bg-light" id="resposta-5" style="display: none;">
                         <p align="center">
                             Os cientistas não têm a certeza porque é que um gato ronrona.
@@ -159,9 +159,9 @@
 
                 <div class="col-sm-12 col-md-6 col-pergunta">
 
-                    <a class="btn btn-success btn-lg  w-100" id="btn-pergunta-6">
-                        Quanto pelo tem um gato?
-                    </a>
+                    <div class="text-light bg-success w-100 div-pergunta" id="btn-pergunta-6">
+                        Porquê o gato ronrona?
+                    </div>
                     <div class="bg-light" id="resposta-6" style="display: none;">
                         <p align="center">
                             Um gato tem cerca de 130.000 pelos por cm2.
