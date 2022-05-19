@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Perguntas SlideToggle</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Amanda Mendes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="img-jogo-perguntas/cato.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+
+    <!-- J Query -->
+    <!-- jQuery compressed for production -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn-pergunta-1").click(function () {
+                $("#resposta-1").slideToggle();
+            });
+            $("#btn-pergunta-2").click(function () {
+                $("#resposta-2").slideToggle();
+            });
+            $("#btn-pergunta-3").click(function () {
+                $("#resposta-3").slideToggle();
+            });
+            $("#btn-pergunta-4").click(function () {
+                $("#resposta-4").slideToggle();
+            });
+            $("#btn-pergunta-5").click(function () {
+                $("#resposta-5").slideToggle();
+            });
+            $("#btn-pergunta-6").click(function () {
+                $("#resposta-6").slideToggle();
+            });
+        });
+    </script>
+
+    <style>
+        .col-pergunta {
+            min-height: 200px;
+        }
+
+        .card-altura {
+            min-height: 90px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid px-3 bg-success text-light">
+        <h1>Jogo de Perguntas</h1>
+        <p>Perguntas e Respostas utilizando SlideToggle()</p>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container-fluid mt-2">
+            <div class="row my-2">
+
+                <!-- inicio -->
+                <div class="col-sm-12 col-md-6 col-pergunta">
+
+                    <!--
+                    <a class="btn btn-info w-100" id="btn-pergunta-1">
+                        Em média, quanto tempo um gato passa dormindo diariamente?
+                    </a>
+                    <div class="bg-light" id="resposta-1" style="display: none;">
+                        <p align="center">
+                            Em média um gato passa 2/3 do dia a dormir.
+                            Isso significa que em 9 anos de vida, apenas está acordado 3 anos.
+                        </p>
+                    </div>
+                    -->
+                    <div class="card">
+                        <div class="card-body card-altura">
+                            Em média, quanto tempo um gato passa dormindo diariamente?
+                        </div>
+                        <div class="bg-light" id="resposta-1" style="display: none;">
+                            <p align="center">
+                                Em média um gato passa 2/3 do dia a dormir.
+                                Isso significa que em 9 anos de vida, apenas está acordado 3 anos.
+                            </p>
+                        </div>
+                        <button class="btn btn-success" id="btn-pergunta-1">Clique para saber!</button>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-pergunta">
+
+                    <div class="card">
+                        <div class="card-body card-altura">
+                            Quantos gatos domésticos existem no mundo?
+                        </div>
+                        <div class="bg-light" id="resposta-2" style="display: none;">
+                            <p align="center">
+                                Existem mais de 500 milhões de gatos domésticos no mundo,
+                                e aproximadamente 40 raças reconhecidas.
+                            </p>
+                        </div>
+                        <button class="btn btn-success" id="btn-pergunta-2">Clique para saber!</button>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-pergunta">
+                    <a class="btn btn-success btn-lg w-100" id="btn-pergunta-3">
+                        Quem ouve melhor: o gato ou o cão?
+                    </a>
+                    <div class="bg-light" id="resposta-3" style="display: none;">
+                        <p align="center">
+                            A audição de um gato é melhor do que a de um cão.
+                            Um gato consegue ouvir sons de alta
+                            frequência, cerca de 2 oitavas acima de qualquer humano.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-pergunta">
+
+                    <a class="btn btn-success btn-lg  w-100" id="btn-pergunta-4">
+                        De acordo com a lenda hebráica, como nasceu o gato?
+                    </a>
+                    <div class="bg-light" id="resposta-4" style="display: none;">
+                        <p align="center">
+                            De acordo com uma lenda hebraica, Noé rezou a Deus para o ajudar a
+                            proteger a comida dos ratos na arca.
+                            Deus fez um Leão espirrar, e desse espirro nasceu o gato.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-pergunta">
+
+                    <a class="btn btn-success  btn-lg w-100" id="btn-pergunta-5">
+                        Porquê o gato ronrona?
+                    </a>
+                    <div class="bg-light" id="resposta-5" style="display: none;">
+                        <p align="center">
+                            Os cientistas não têm a certeza porque é que um gato ronrona.
+                            Muitos veterinários acreditam que um gato ronrona fazendo as suas
+                            cordas vocais vibrar na zona mais profunda da garganta. Para isto ser possível,
+                            um músculo na laringe abre e fecha a passagem do ar 25 vezes por segundo.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-pergunta">
+
+                    <a class="btn btn-success btn-lg  w-100" id="btn-pergunta-6">
+                        Quanto pelo tem um gato?
+                    </a>
+                    <div class="bg-light" id="resposta-6" style="display: none;">
+                        <p align="center">
+                            Um gato tem cerca de 130.000 pelos por cm2.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
